@@ -47,7 +47,7 @@ Total: 10 characters, ~120 activities. Spread is balanced enough that every filt
 1. Specification and dataset preparation were done in conversation with Claude
 2. A single comprehensive master prompt was drafted, containing full design specs, layout rules, mobile breakpoints, icon definitions, and the embedded dataset
 3. The master prompt was attached to a Claude Code session pointed at an empty working directory
-4. Claude Code generated all four files in one pass (data.js, index.html, style.css, script.js)
+4. Claude Code generated all four files from the prompt (data.js, index.html, style.css, script.js)
 5. Two bugs were identified during testing:
    - Category counts under icons showed point sums instead of activity counts
    - Mobile podium showed 2-1-3 order instead of 1-2-3 stack
