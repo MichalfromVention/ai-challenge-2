@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+
+    <!-- Header card with filters -->
+    <header class="card header-card">
+      <div class="header-text">
+        <h1>Leaderboard</h1>
+        <p class="subtitle">Top performers based on contributions and activity</p>
+      </div>
+      <div class="filter-row">
+        <select id="filter-year" aria-label="Filter by year">
+          <option value="">All Years</option>
+          <option value="2025">2025</option>
+        </select>
+        <select id="filter-quarter" aria-label="Filter by quarter">
+          <option value="">All Quarters</option>
+          <option value="Q1">Q1</option>
+          <option value="Q2">Q2</option>
+          <option value="Q3">Q3</option>
+          <option value="Q4">Q4</option>
+        </select>
+        <select id="filter-category" aria-label="Filter by category">
+          <option value="">All Categories</option>
+          <option value="Combat Missions">Combat Missions</option>
+          <option value="Force Training">Force Training</option>
+          <option value="Diplomatic Relations">Diplomatic Relations</option>
+        </select>
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/>
+            <line x1="12.5" y1="12.5" x2="17" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <input type="search" id="filter-search" placeholder="Search employee..." aria-label="Search employee" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Podium section -->
+    <section class="podium-section" aria-label="Top 3 performers">
+      <div id="podium" class="podium"></div>
+    </section>
+
+    <!-- Full ranking list -->
+    <section class="list-section" aria-label="Full ranking list">
+      <div id="ranking-list" class="ranking-list"></div>
+    </section>
+
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
