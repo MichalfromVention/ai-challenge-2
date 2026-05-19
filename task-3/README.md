@@ -2,7 +2,7 @@
 
 A Telegram bot that helps you learn from articles. Send a URL, get a summary, take a quiz.
 
-## Try it
+## Try it 
 
 Bot: [@MichalLearningBot](https://t.me/MichalLearningBot)
 (zweryfikuj handle bota w Telegramie – w info bota)
